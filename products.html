@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Mobile Blazz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #333;
+        }
+        .navbar .nav-link {
+            color: white !important;
+            transition: color 0.3s;
+        }
+        .navbar .nav-link:hover {
+            color: #f0a500 !important;
+        }
+        .container_n {
+            padding: 0px 20px 0px;
+            max-width: 50%;
+            margin: 5px;
+            display: flex; 
+        }
+        
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+            }
+            .navbar .nav-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 5px;
+            }
+        }
+        .container {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .hero {
+            margin-top: 60px;
+            background: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            margin: 0;
+        }
+        .filters {
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .filters label {
+            margin-right: 15px;
+        }
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+        }
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 300px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+        }
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+        }
+        .product-card h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .product-card p {
+            color: #555;
+        }
+        .product-card button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px 5px;
+            cursor: pointer;
+        }
+        .product-card button:hover {
+            background-color: #575757;
+        }
+        .newsletter {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 30px 20px;
+        }
+        .newsletter input {
+            padding: 10px;
+            width: 80%;
+            max-width: 300px;
+            margin-right: 10px;
+        }
+        .newsletter button {
+            padding: 10px 20px;
+            background-color: #575757;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .newsletter button:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container_n">
+            <a class="navbar-brand" href="#">Mobile Blazz</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="hero">
+        <h1>Our Products</h1>
+        <p>Discover our wide range of mobile phones and accessories.</p>
+    </div>
+
+    <div class="filters">
+        <label>Brand:
+            <select>
+                <option>All</option>
+                <option>Apple</option>
+                <option>Samsung</option>
+                <option>OnePlus</option>
+            </select>
+        </label>
+        <label>Price Range:
+            <select>
+                <option>All</option>
+                <option>Under $300</option>
+                <option>$300 - $600</option>
+                <option>Above $600</option>
+            </select>
+        </label>
+        <label>Customer Ratings:
+            <select>
+                <option>All</option>
+                <option>4+ stars</option>
+                <option>3+ stars</option>
+            </select>
+        </label>
+    </div>
+
+    <div class="product-list">
+        <div class="product-card">
+            <img src="/assets/s24ultra.jpg" alt="Phone 1">
+            <h3>Samsung S24 ultra</h3>
+            <p>Price: $499</p>
+            <button>View Details</button>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/assets/13pronew.jpg" alt="Phone 2">
+            <h3>Phone Model 2</h3>
+            <p>Price: $699</p>
+            <button>View Details</button>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/assets/15pro.jpg" alt="Phone 3">
+            <h3>Phone Model 3</h3>
+            <p>Price: $899</p>
+            <button>View Details</button>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/assets/iphone15.jpg" alt="Phone 3">
+            <h3>Phone Model 3</h3>
+            <p>Price: $899</p>
+            <button>View Details</button>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/assets/img1.jpg" alt="Phone 3">
+            <h3>Tablet</h3>
+            <p>Price: $899</p>
+            <button>View Details</button>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/assets/img2.jpg" alt="Phone 3">
+            <h3>Iphone 12 pro</h3>
+            <p>Price: $899</p>
+            <button>View Details</button>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/assets/13pro3.jpg" alt="Phone 3">
+            <h3>Iphone 13 pro</h3>
+            <p>Price: $899</p>
+            <button>View Details</button>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/assets/13pro2.jpg" alt="Phone 3">
+            <h3>Iphone 13 pro max</h3>
+            <p>Price: $899</p>
+            <button>View Details</button>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/assets/hp2.jpg" alt="Phone 3">
+            <h3>Headphone</h3>
+            <p>Price: $899</p>
+            <button>View Details</button>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/assets/hp1.jpg" alt="Phone 3">
+            <h3>Headphone</h3>
+            <p>Price: $899</p>
+            <button>View Details</button>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/assets/buds.jpg" alt="Phone 3">
+            <h3>Earbuds</h3>
+            <p>Price: $899</p>
+            <button>View Details</button>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/assets/earphone.jpg" alt="Phone 3">
+            <h3>e\Earphone</h3>
+            <p>Price: $899</p>
+            <button>View Details</button>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+    <div class="newsletter">
+        <h2>Stay Updated</h2>
+        <p>Sign up for exclusive deals and the latest news.</p>
+        <input type="email" placeholder="Enter your email">
+        <button>Subscribe</button>
+        <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mobile Blazz. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    </div>
+</body>
+</html>
